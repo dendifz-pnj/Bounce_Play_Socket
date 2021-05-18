@@ -212,16 +212,16 @@ final class Dashboard extends JFrame implements Runnable{
 				PrintWriter out = new PrintWriter(outStream, true);
 				
 				out.println("Hello! Enter BYE to exit.");
-				out.println("Command : start, stop, add, BYE");
+				out.println("Command : start, stop, add, exit");
 				// echo client input
 				boolean done = false;
 				while (!done && ins.hasNextLine()) {
 					String line = ins.nextLine();
 					
 					out.println("Command " + ": " + line);
-					if (line.trim().equals("BYE")) {
+					if (line.trim().equals("exit")) {
 						done = true;
-					} else if (line.trim().matches("add") || line.trim().matches("add.* .*") || line.trim().matches("add.* .* .*"))   {
+					} else if (line.trim().matches("add"))   {
 						out.println("Wrong Command : add [square|circle] [small|medium|large] [diagonal|horizontal|vertical] [fast|half|slow]");
 					} else if (line.trim().matches("add.* .* .* .*"))  {
 						shapeType(line);
