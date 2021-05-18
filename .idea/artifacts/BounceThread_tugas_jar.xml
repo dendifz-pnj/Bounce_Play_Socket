@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="BounceThread_tugas:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/BounceThread_tugas_jar</output-path>
+    <root id="archive" name="BounceThread_tugas.jar">
+      <element id="module-output" name="Bounce1907411020Ian" />
+    </root>
+  </artifact>
+</component>
