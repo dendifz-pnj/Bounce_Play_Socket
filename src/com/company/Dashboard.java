@@ -29,7 +29,7 @@ final class Dashboard extends JFrame implements Runnable{
    private int size = 1;
    private int direction = 1;
    private int speed = 1;
-
+   
    public Dashboard() {
       this.add(this.shapeComponent, "Center");
       JPanel jp1 = new JPanel();
@@ -233,7 +233,7 @@ final class Dashboard extends JFrame implements Runnable{
 					}
 				}
 			} finally {
-				this.incoming.close();
+				System.exit(1);
 			}
 		} catch (IOException e) {
 			e.printStackTrace();
